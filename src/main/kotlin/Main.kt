@@ -1,6 +1,4 @@
 
-
-
 class Singleton private constructor(val message: String) {
     companion object {
         private var instance: Singleton? = null
