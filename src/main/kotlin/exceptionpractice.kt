@@ -1,23 +1,17 @@
-fun main() {
-//    try {
-//        val result = 10 / 0
-//        println(result)
-//    } catch (e: ArithmeticException) {
-//        println("Exception caught: ${e.message}")
-//    }
-    print(10/0)
-    System.exit(0)
-}
-
 //fun main() {
 //    try {
 //        val result = 10 / 2
 //        println(result)
-//    } catch (e: Exception) {
-//        println("Exception: ${e.message}")
-//    } finally {
-//        println("Execution completed.")
+//        println("&&&&&&&&&&&&&&&&")
+//       // System.exit(0)
+//    } catch (e: ArithmeticException) {
+//        println("Exception caught: ${e.message}")
 //    }
+//    finally {
+//        println("***************")
+//    }
+//    // var obj =Student()
+//    // var obj :Student =Student()
 //}
 
 
@@ -29,7 +23,11 @@ fun main() {
 //    }
 //}
 //fun main() {
-//    checkAge(16) // This will throw an exception
+//    try {
+//        checkAge(16) // This will throw an exception
+//    }catch (e:Exception){
+//        print(e.message)
+//    }
 //}
 
 
@@ -39,13 +37,16 @@ fun main() {
 //}
 
 
-//fun main() {
-//    try {
-//        val list = listOf(1, 2, 3)
-//        println(list[5]) // IndexOutOfBoundsException
-//    } catch (e: ArithmeticException) {
-//        println("Arithmetic Exception: ${e.message}")
-//    } catch (e: IndexOutOfBoundsException) {
-//        println("IndexOutOfBoundsException: ${e.message}")
-//    }
-//}
+fun main() {
+    try {
+        val list = listOf(1, 2, 3)
+        println(list[5]) // IndexOutOfBoundsException
+    }
+    catch (e: ArithmeticException) {
+        println("Arithmetic Exception: ${e.message}")
+    } catch (e: IndexOutOfBoundsException) {
+        println("IndexOutOfBoundsException: ${e.message}")
+    } catch (e:Exception){
+
+    }
+}
